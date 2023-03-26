@@ -21,5 +21,20 @@ type Query {
     savedBooks: [Book]
   }
 
+  type Book {
+    _id: ID
+    bookId: String!
+    authors: [String]
+    description: String
+    title: String!
+    image: String
+    link: String
+  }
 
+  type Auth {
+    token: ID!
+    user: User
+  }
   `;
+  
+  module.exports = typeDefs;
