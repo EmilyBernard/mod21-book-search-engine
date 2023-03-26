@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import {
   ApolloClient,
   InMemoryCache,
@@ -45,8 +45,7 @@ function App() {
             <Route path='/saved' element={<SavedBooks />} />
             <Route 
               path='*'
-              element={<NotFound />}
-            />
+              element={<h1 className='display-2'>Wrong page!</h1>} />
           </Routes>
         </>
       </Router>
