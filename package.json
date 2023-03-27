@@ -10,13 +10,15 @@
     "build": "cd client && npm run build"
   },
   "engines": {
-		"node": "v16.18.0",
-		"npm": "8.19.2"
+		"node": "v16.18.0"
 	},
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "concurrently": "^5.1.0"
+  },
+  "dependencies": {
+    "serve":"^14.2.0"
   }
 }

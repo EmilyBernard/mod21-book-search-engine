@@ -43,6 +43,6 @@ type Query {
     title: String!
     image: String
     link: String
-}
+  }
   `;
   module.exports = typeDefs;
